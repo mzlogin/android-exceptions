@@ -102,7 +102,18 @@ res/color/feature_item_selector.xml
 
 ### 解决方案
 
-res/drawable/feature_item_seelctor.xml
+layout/item_test.xml
+
+```xml
+<TextView
+    android:id="@+id/title"
+    ...
+    android:background="@drawable/feature_item_selector"
+    ...
+    />
+```
+
+res/drawable/feature_item_selector.xml
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
