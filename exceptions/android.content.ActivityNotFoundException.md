@@ -9,6 +9,7 @@
     * [出错代码](#出错代码)
     * [崩溃分析](#崩溃分析)
     * [解决方案](#解决方案)
+    * [参考链接](#参考链接)
 
 <!-- vim-markdown-toc -->
 
@@ -50,7 +51,9 @@
 
 ### 崩溃分析
 
-同上。
+[官方文档][1] 有说明：
+
+> To be of use with Context.startActivity(), all activity classes must have a corresponding \<activity\> declaration in their package's AndroidManifest.xml.
 
 ### 解决方案
 
@@ -68,3 +71,9 @@
     ...
 </manifest>
 ```
+
+### 参考链接
+
+* [Activity \| Android Developers][1]
+
+[1]: https://developer.android.com/reference/android/app/Activity.html
