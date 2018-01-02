@@ -168,7 +168,7 @@ java.lang.RuntimeException: Unable to start receiver org.mazhuang.test.receiver.
 
 由此可知 onReceive 方法的入参 `context` 不是 Activity 实例，它没有关联的 task 来放置新启动的 Activity，使用这样的 Context 来启动 Activity 需要指定 `FLAG_ACTIVITY_NEW_TASK` 来将其放置到一个独立的 task。
 
-参考 [Context#startActivity(android.content.Intent, android.os.Bundle)](https://developer.android.com/reference/android/content/Context.html#startActivity(android.content.Intent, android.os.Bundle\)) 的说明：
+参考 [Context#startActivity(android.content.Intent, android.os.Bundle)](https://developer.android.com/reference/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)) 的说明：
 
 ```
 Note that if this method is being called from outside of an Activity Context, then the Intent must include the FLAG_ACTIVITY_NEW_TASK launch flag. This is because, without being started from an existing Activity, there is no existing task in which to place the new activity and thus it needs to be placed in its own separate task.
