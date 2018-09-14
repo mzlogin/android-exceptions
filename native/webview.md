@@ -31,7 +31,7 @@
 
 在 [WebView 闪退][1] 这个链接找到一点参考信息：
 
-> Gradle 版本升级导致的（3.3 -> 3.5），3.5 版本编译的 APP 不能兼容 3.3 版本编译的 APP 运行产生的数据，所以闪退，只要删除 /data/data/packagename/app_webview 下的 gpuCache 文件夹就 OK 了。
+> Gradle 版本升级导致的（3.3 -> 3.5），3.5 版本编译的 APP 不能兼容 3.3 版本编译的 APP 运行产生的数据，所以闪退，只要删除 /data/data/packagename/app_webview 文件夹就 OK 了。
 
 我的场景还真是符合，从旧版本 Gradle 编译的升级到的新版本 Gradle 编译的。
 
@@ -42,5 +42,7 @@
 2. 如果无法避免这种升级场景存在，那么在代码里添加逻辑，应用启动后删除一次上述文件夹，并在 SharedPreferences 里添加一个标记，下次启动时判断标记，如果已经删除过就不再次处理。
 
 ### 参考链接
+
+* [WebView 闪退][1]
 
 [1]: http://www.voidcn.com/article/p-drczlbqs-bqz.html
