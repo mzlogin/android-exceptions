@@ -7,6 +7,7 @@
 * [android.content.ActivityNotFoundException](./exceptions/android.content.ActivityNotFoundException.md)
 * [android.view.InflateException](./exceptions/android.view.InflateException.md)
 * [java.lang.ClassNotFoundException](./exceptions/java.lang.ClassNotFoundException.md)
+* [java.lang.IllegalArgumentException](./exceptions/java.lang.IllegalArgumentException.md)
 * [java.lang.IllegalStateException](./exceptions/java.lang.IllegalStateException.md)
 * [java.lang.NullPointerException](./exceptions/java.lang.NullPointerException.md)
 * [java.lang.NumberFormatException](./exceptions/java.lang.NumberFormatException.md)
